@@ -1,0 +1,81 @@
+@media only screen and (max-width:1100px){
+    .container{padding:0 15px;}
+}
+
+
+
+@media only screen and (max-width:991px){
+    .banner-cnt{left:40%;}
+    .banner-cnt h1{font-size:26px;line-height: 40px;padding:20px 0 0 0;}
+    .enterprice-left{padding:0;}
+    .enterprice-right{padding:0;}
+    .enterprice-left p{padding:0 0 20px 0;}
+    .consultant ul li p{padding: 0 0 10px 20px;}
+    .footer-in span{font-size:11px;line-height: 15px;}
+    .footer-right ul li a img{width:35px;height:35px;}
+    .footer-in span{padding:9px 0 0 0;}
+    form ul li{display: block;margin:0 0 11px 0;}
+    form .button{margin:25px auto auto;}
+    form ul li .form-ctrl{width: 100%;flex: 0 0 100%;-webkit-flex: 0 0 100%;}
+    .dd{width: 100% !important;-webkit-flex: 0 0 100%;flex: 0 0 100%;}
+    form ul li label{width: 100%;padding: 5px 0;}
+     form h2:after{top:-24px;}
+}
+@media only screen and (max-width:767px){
+    .banner-cnt{left:0px;}
+    .header {padding: 30px 50px 1px 50px;}
+    .logo a img{width:80px;height:auto;}
+    .banner-cnt{padding: 0 15px;}
+    /* .banner figure img{min-height:270px;object-fit: cover;} */
+  
+    .banner-cnt h1 br{display: none;}
+    .enterprice-in{padding:40px 0px 40px 0;}
+    .enterprice-left p{font-size:13px;line-height: 28px;}
+    form ul li{margin:0 0 20px 0;-webkit-flex-wrap: wrap;flex-wrap: wrap;}
+    form ul li.email{margin:0 0 20px 0;}
+    form ul li label{font-size:14px;line-height: 25px;}
+    .enterprice-right p span{font-size:12px;line-height: 25px;}
+    form{padding:50px 15px 40px 15px;}
+    form h2{padding: 4px 70px 15px 0;}
+    form .button{font-size:18px;}
+    .enterprice-right{padding: 0 0 15px 0;width: 100%;float: none;}
+    .container{padding:0 15px;}
+    form .button{margin:20px auto auto;}
+    form ul{width:100%;}
+    form ul li label{width:100%;display: block;text-align: left;padding: 5px 0 5px 0;}
+    form ul li .form-ctrl{width:100%;display: block;}  
+    .enterprice-left{padding:0 0 15px 0;float: none;width: 100%;}
+    .consultant ul li p:before{top:12px;margin: 0 12px 0 -20px;;position: static;}
+    .footer-in span{padding:6px 0 0 0;}
+    .footer-in span{font-size:11px;line-height: 22px;}
+    .enterprice-left p{padding:0 0 15px 0;}
+    .consultant ul li {text-align: left;}
+    .dd{width: 100% !important}
+     form h2:after{top:-16px;}
+     .banner figure img.banner-desk{ display: none;}
+.banner figure img.banner-mob{ display: block;}
+   
+}
+@media only screen and (max-width:599px){
+    .banner-cnt h1{font-size:25px;line-height: 40px;}
+    /* .banner figure img{min-height:250px;} */
+    form ul li{margin:0 0 10px 0;}
+    form ul li label{padding:5px 0 5px 0;}
+    .enterprice-right p span{font-size:10px;line-height: 17px;padding:10px 0 10px 35px;}
+    form h2{padding:4px 50px 10px 0;font-size:23px;line-height: 35px;}
+    .footer-in span{float:none;width:100%;padding:0 0 20px 0;}
+    .footer-in{text-align: center;}
+    .footer-right{float:none;}
+    .enterprice-in{padding:20px 0px 15px 0;}
+    form .button{font-size:15px;margin:11px auto auto;}
+    form h2:after{top: -16px;height: 49px;width: 40px;}
+    form{padding:40px 15px 20px 15px;}
+    .header{padding:30px 30px 1px 30px;}
+    .enterprice-left p{line-height: 25px;}
+ 
+}
+@media only screen and (max-width:479px){
+    .banner-cnt{top:43%;}
+    .banner-cnt h1{font-size:18px;line-height:26px;}
+    .footer-in span{font-size:10px;}
+}

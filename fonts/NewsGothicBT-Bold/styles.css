@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'NewsGothicBT-Bold';
+  src: url('NewsGothicBT-Bold.eot?#iefix') format('embedded-opentype'),  url('NewsGothicBT-Bold.otf')  format('opentype'),
+	     url('NewsGothicBT-Bold.woff') format('woff'), url('NewsGothicBT-Bold.ttf')  format('truetype'), url('NewsGothicBT-Bold.svg#NewsGothicBT-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
