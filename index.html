@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <meta name="format-detection" content="telephone=no">
+      <title>Landing page </title>
+      <!-- SET: SCRIPTS -->
+      <!--[if lt IE 9]>
+      <script type="text/javascript" src="js/html5shiv.min.js"></script>
+      <script type="text/javascript" src="js/IE9.js"></script>
+      <style></style>
+      <![endif]-->
+
+      <style>
+          .borderRadius{-moz-border-radius:5px; border-radius:5px; }
+.borderRadiusTp{-moz-border-radius:5px 5px 0 0; border-radius:5px 5px 0 0;}
+.borderRadiusBtm{-moz-border-radius:0 0 5px 5px ; border-radius:0 0 5px 5px;}
+
+.ddcommon {position:relative;display:-moz-inline-stack; zoom:1; display:inline-block; *display:inline; cursor:default;}
+.ddcommon ul{padding:0;margin:0;}
+.ddcommon ul li{list-style-type:none;}
+.borderRadiusTp ul li:last-child{-moz-border-radius:0 0 5px 5px ; border-radius:0 0 5px 5px;border-bottom:0 none #c3c3c3; }
+.borderRadiusBtm ul li:first-child{-moz-border-radius:5px 5px 0 0; border-radius:5px 5px 0 0 ;border-bottom:1 solid #c3c3c3; }
+
+.ddcommon .disabled img, .ddcommon .disabled span, .ddcommon.disabledAll{
+opacity: .5; /* standard: ff gt 1.5, opera, safari */
+-ms-filter:"alpha(opacity=50)"; /* ie 8 */
+filter:alpha(opacity=50); /* ie lt 7 */
+-khtml-opacity:.5; /* safari 1.x */
+-moz-opacity:.5; /* ff lt 1.5, netscape */
+color:#999999;
+}
+.ddcommon .clear{clear:both}
+.ddcommon .shadow{-moz-box-shadow:5px 5px 5px -5px #888888;-webkit-box-shadow:5px 5px 5px -5px #888888;box-shadow: 5px 5px 5px -5px #888888;}
+.ddcommon input.text{color:#7e7e7e;padding:0 0 0 0; position:absolute; background:#fff; display:block; width:98%; height:98%; left:2px; top:0; border:none;}
+.ddOutOfVision{position:relative; display:-moz-inline-stack; display:inline-block; zoom:1; *display:inline;}
+.borderRadius .shadow{-moz-box-shadow:5px 5px 5px -5px #888888;-webkit-box-shadow:5px 5px 5px -5px #888888;box-shadow: 5px 5px 5px -5px #888888;}
+.borderRadiusBtm .shadow{-moz-box-shadow:-5px -5px 5px -5px #888888;-webkit-box-shadow:-5px -5px 5px -5px #888888;box-shadow: -5px -5px 5px -5px #888888}
+.borderRadiusTp .border, .borderRadius .border{-moz-border-radius:0 0 5px 5px ; border-radius:0 0 5px 5px;}
+.borderRadiusBtm .border{-moz-border-radius:5px 5px 0 0; border-radius:5px 5px 0 0;}
+img.fnone{float:none !important}
+.ddcommon .divider{width:0; height:100%; position:absolute;}
+.ddcommon .ddArrow{display:inline-block; position:absolute; top:50%; right:4px;}
+.ddcommon .ddArrow:hover{background-position:0 100%;}
+.ddcommon .ddTitle{padding:0; position:relative; display:inline-block; width:100%}
+.ddcommon .ddTitle .ddTitleText{display:block;}
+.ddcommon .ddTitle .ddTitleText .ddTitleText{padding:0;}
+.ddcommon .ddTitle .description{display:block;}
+.ddcommon .ddTitle .ddTitleText img{position:relative; vertical-align:middle; float:left}
+.ddcommon .ddChild{position:absolute;display:none;width:100%;overflow-y:auto; overflow-x:hidden; zoom:1; z-index:9999}
+.ddcommon .ddChild li{clear:both;}
+.ddcommon .ddChild li .description{display:block;}
+.ddcommon .ddChild li img{border:0 none; position:relative;vertical-align:middle;float:left}
+.ddcommon .ddChild li.optgroup{padding:0;}
+.ddcommon .ddChild li.optgroup .optgroupTitle{padding:0 5px; font-weight:bold; font-style:italic}
+.ddcommon .ddChild li.optgroup ul li{padding:5px 5px 5px 15px}
+.ddcommon .noBorderTop{border-top:none 0  !important; padding:0; margin:0;}
+
+/*************** default theme **********************/
+.dd{border:1px solid #c3c3c3;}
+.dd .divider{border-left:1px solid #c3c3c3; border-right:1px solid #fff;; right:24px;}
+.dd .ddArrow{width:16px;height:16px; margin-top:-8px; background:url(../../images/msdropdown/skin1/dd_arrow.gif) no-repeat;}
+.dd .ddArrow:hover{background-position:0 100%;}
+.dd .ddTitle{color:#000;background:#e2e2e4 url(../../images/msdropdown/skin1/title-bg.gif) repeat-x left top;}
+.dd .ddTitle .ddTitleText{padding:5px 20px 5px 5px;}
+.dd .ddTitle .ddTitleText .ddTitleText{padding:0;}
+.dd .ddTitle .description{font-size:12px; color:#666}
+.dd .ddTitle .ddTitleText img{padding-right:5px;}
+.dd .ddChild{border:1px solid #c3c3c3; background-color:#fff; left:-1px;}
+.dd .ddChild li{padding:5px; background-color:#fff; border-bottom:1px solid #c3c3c3;}
+.dd .ddChild li .description{color:#666;}
+.dd .ddChild li .ddlabel{color:#333;}
+.dd .ddChild li.hover{background-color:#f2f2f2}
+.dd .ddChild li img{padding:0 6px 0 0;}
+.dd .ddChild li.optgroup{padding:0;}
+.dd .ddChild li.optgroup .optgroupTitle{padding:0 5px; font-weight:bold; font-style:italic}
+.dd .ddChild li.optgroup ul li{padding:5px 5px 5px 15px}
+.dd .ddChild li.selected{background-color:#d5d5d5; color:#000;}
+
+
+/*====================================== reset.css is here ========================================*/
+*{margin:0; padding:0; box-sizing:border-box; }
+table {	border-collapse:collapse; border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var {font-style:normal; font-weight:normal; }
+ol,ul { list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {	font-size:100%;	font-weight:bold;}
+q:before,q:after {content:'';}
+abbr,acronym { border:0;}
+.clear{clear:both; font-size:1px;line-height:1px; display:block; height:0;}
+.clearfix:after{content:"";display:block;clear:both;}
+.last	{margin:0 !important;}
+.pad_last{padding:0 !important;}
+.no_bg {background:none !important;}
+.no_bor{border:0 none !important; }
+header,nav,section,article,aside,footer,hgroup,figure {display: block; }
+/**************************************************************************************/
+a {color:#000; text-decoration:none; outline:0 none !important; }
+a:hover, a:focus {color:#000;  text-decoration:none; outline:0 none !important;}
+h1 {font-size:24px;}
+h2 {font-size:22px;}
+h3 {font-size:18px;}
+h4 {font-size:16px;}
+h5 {font-size:14px;}
+h6 {font-size:12px;}
+h1{font-size: 31px;line-height: 41px;font-family: Arial, Helvetica, sans-serif;font-weight:700;color:#ffffff;letter-spacing: -0.3px;}
+h2{font-size: 27px;line-height: 40px;font-family: Arial, Helvetica, sans-serif-Bold;font-weight:normal;font-weight:normal;color:#ffffff;}
+p{font-size: 13px;line-height: 37px;font-family: Arial, Helvetica, sans-serif;font-weight:400;color:#59595c;}
+/*---------------------------------------------------*/
+html {}
+body {color:#b1b1b1;font-family: Arial, Helvetica, sans-serif; font-size:12px;}
+.flt_lt {float:left; display:inline;}
+.flt_rt {float:right; display:inline;}
+
+
+/*-----------LayOut Start here-----------------------*/
+.wrapper									{margin:0 auto;/* max-width:900px; */background: #fff;position: relative;}
+.container									{margin:0 auto;padding: 0;max-width: 1024px;}
+/*header*/
+.header{padding: 30px 35px 1px 35px;position: absolute;top:0;right: 0;z-index: 10;}
+.logo{float: right;}
+.logo a{display: inline-block;}
+/* banner */
+.banner{position: relative;}
+.banner figure{width:100%; height: auto; }
+
+.banner figure img{max-width:100%;width: 100%;height: auto;object-fit: cover;}
+.banner figure img.banner-desk{ display: block;}
+.banner figure img.banner-mob{ display: none;}
+.banner-cnt{position: absolute;top: 44.4%;left: 47%;}
+/*main content */
+.main-content{}
+.enterprice-blk{}
+.enterprice-in{padding: 35px 4px 27px 0px;}
+.enterprice-left{float:left;width:53.6%;padding: 0 22px 0 0;text-align: justify;}
+.enterprice-left p{line-height: 26px;letter-spacing: -0.2px;padding: 3px 0 23px 0;}
+.enterprice-left p span{display: inline-block;color:#006cb6;font-weight:700;}
+.enterprice-left p a{display: inline-block;color:#006cb6;font-weight:700;}
+.enterprice-right{float:right;width:45%;padding: 10px 0 0 11px;}
+.consultant{}
+.consultant p{padding: 0 0 9px 0;}
+.consultant ul li p{padding: 0 0 10px 25px;position: relative;letter-spacing: -0.2px;}
+.consultant ul li p:before{content:'';display: inline-block;top: 10px;left: 1px;position: absolute;background: url(images/icon.png) no-repeat;width: 8px;height: 9px;background-size: CONTAIN;}
+
+/* form */
+form{background: #808285;padding: 40px 20px 8px 14px;}
+form h2{position: relative;padding: 0px 64px 15px 0;display: inline-block;}
+form h2:after{content:'';display: inline-block;position: absolute;right:0;top: -29px;background: url(images/mailicon.png) no-repeat;width: 50px;height: 60px;background-size: CONTAIN;}
+form ul{display: block;}
+form ul li{display: block;margin: 5px 0 21px 0;display:flex;display:-webkit-flex;display:-moz-flex;display:-o-flex;}
+form ul li label{font-size: 14.01px;line-height: 20px;font-weight:400;color:#ffffff;display: inline-block;width: 40.6%;padding: 0px 0 0px 0;vertical-align:  middle;text-transform: capitalize;-webkit-align-self: center;align-self: center;}
+form ul li label span{display: block;font-size: 11px;line-height: 13px;font-weight:400;color:#ffffff;padding: 0 0 0 0;}
+form ul li .form-ctrl{width: 187px;height: 22px;outline: none;border:none;padding:0 10px;color: #59595c;font-family: Arial, Helvetica, sans-serif;font-size: 20px;}
+form ul li.email{margin: 0 0 15px 0;}
+form ul li.phone{margin: 0 0 15px 0;}
+p label input{display: none;}
+.enterprice-right p span{font-size: 12px;line-height: 17px;color:#ffffff;padding: 5px 0 2px 31px;background: url(images/uncheck.png) no-repeat 4px center;cursor:pointer;display: inline-block;letter-spacing: 0.1px;background-size: 23px auto;}
+.enterprice-right p label input:checked + span{background-image: url(images/check.png) ;}
+form .button{font-size: 16.9px;line-height: 44px;color:#ffffff;font-family: Arial, Helvetica, sans-serif;font-weight:normal;cursor:pointer;outline:  none;margin: 34px auto auto;display: block;background: url(images/button.png) no-repeat;width: 131px;height: 45px;border:none;background-size: contain;}
+form p{padding: 4px 0 0 0;}
+/* contact form */
+.errS{color:#f00;font-size:19px;line-height: 21px;font-family: Arial, Helvetica, sans-serif;font-weight:400;text-align: center;display:block;padding: 8px 0 0 0;}
+.f_success{color:#0f0;font-size:19px;line-height: 22px;font-family: Arial, Helvetica, sans-serif;font-weight:400;text-align: center;padding: 8px 0 0 0;display:block;}
+/*drop down */
+  .dd .ddArrow{background: url(images/dropdownicon.png) no-repeat center center #d1d3d4;width: 28px;height: 22px;top:0;right:0;margin-top:0;cursor:pointer;background-size: 13px auto;}
+.dd .ddTitle{background: #ffffff;height: 22px;}
+.dd{border:none;border-radius: 0px;height: 22px;outline:none;width: 187px !important;}
+.borderRadiusTp{border-radius:0px;}
+.dd .divider{right: 25px;}
+.dd .ddArrow:hover{background-position: center center;}
+.dd .ddChild li{margin:0;}
+.dd .ddChild li.selected{background: #ffffff;}
+.dd .ddChild li{padding:10px;}
+.dd .ddChild{height: 150px !important}
+.dd .ddTitle .ddTitleText{padding: 0px 20px 0px 5px;font-family: Arial, Helvetica, sans-serif;font-size: 15px;color: #59595c;text-align: left;}
+/* footer */
+footer{display: block;}
+.footer-in{padding: 10px 0 27px 3px;}
+.footer-in span{float:left;font-size: 11px;line-height: 13px;color:#424143;display: inline-block;font-weight:400;padding: 7px 0 0 0;letter-spacing: -0.2px;}
+.footer-in span a{ text-decoration: none; color: #006cb6;}
+.footer-right{float:right;display: inline-block;padding: 0 0 0 0;}
+.footer-right ul{}
+.footer-right ul li{float:left;padding: 0 2px;}
+.footer-right ul li a{display: inline-block;}
+.footer-right ul li a img{width: 25px;height: 25px;}
+
+/* -------Don't Remove this---------------*/
+input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], textarea, button, select {
+    -webkit-appearance: none; /*Safari/Chrome*/
+    -moz-appearance: none; /*Firefox*/
+    -ms-appearance: none; /*IE*/
+    -o-appearance: none; /*Opera*/
+    appearance: none;
+    -webkit-border-radius: 0; 
+}
+
+@media only screen and (max-width:1100px){
+    .container{padding:0 15px;}
+}
+
+
+
+@media only screen and (max-width:991px){
+    .banner-cnt{left:40%;}
+    .banner-cnt h1{font-size:26px;line-height: 40px;padding:20px 0 0 0;}
+    .enterprice-left{padding:0;}
+    .enterprice-right{padding:0;}
+    .enterprice-left p{padding:0 0 20px 0;}
+    .consultant ul li p{padding: 0 0 10px 20px;}
+    .footer-in span{font-size:11px;line-height: 15px;}
+    .footer-right ul li a img{width:35px;height:35px;}
+    .footer-in span{padding:9px 0 0 0;}
+    form ul li{display: block;margin:0 0 11px 0;}
+    form .button{margin:25px auto auto;}
+    form ul li .form-ctrl{width: 100%;flex: 0 0 100%;-webkit-flex: 0 0 100%;}
+    .dd{width: 100% !important;-webkit-flex: 0 0 100%;flex: 0 0 100%;}
+    form ul li label{width: 100%;padding: 5px 0;}
+     form h2:after{top:-24px;}
+}
+@media only screen and (max-width:767px){
+    .banner-cnt{left:0px;}
+    .header {padding: 30px 50px 1px 50px;}
+    .logo a img{width:80px;height:auto;}
+    .banner-cnt{padding: 0 15px;}
+    /* .banner figure img{min-height:270px;object-fit: cover;} */
+  
+    .banner-cnt h1 br{display: none;}
+    .enterprice-in{padding:40px 0px 40px 0;}
+    .enterprice-left p{font-size:13px;line-height: 28px;}
+    form ul li{margin:0 0 20px 0;-webkit-flex-wrap: wrap;flex-wrap: wrap;}
+    form ul li.email{margin:0 0 20px 0;}
+    form ul li label{font-size:14px;line-height: 25px;}
+    .enterprice-right p span{font-size:12px;line-height: 25px;}
+    form{padding:50px 15px 40px 15px;}
+    form h2{padding: 4px 70px 15px 0;}
+    form .button{font-size:18px;}
+    .enterprice-right{padding: 0 0 15px 0;width: 100%;float: none;}
+    .container{padding:0 15px;}
+    form .button{margin:20px auto auto;}
+    form ul{width:100%;}
+    form ul li label{width:100%;display: block;text-align: left;padding: 5px 0 5px 0;}
+    form ul li .form-ctrl{width:100%;display: block;}  
+    .enterprice-left{padding:0 0 15px 0;float: none;width: 100%;}
+    .consultant ul li p:before{top:12px;margin: 0 12px 0 -20px;;position: static;}
+    .footer-in span{padding:6px 0 0 0;}
+    .footer-in span{font-size:11px;line-height: 22px;}
+    .enterprice-left p{padding:0 0 15px 0;}
+    .consultant ul li {text-align: left;}
+    .dd{width: 100% !important}
+     form h2:after{top:-16px;}
+     .banner figure img.banner-desk{ display: none;}
+.banner figure img.banner-mob{ display: block;}
+   
+}
+@media only screen and (max-width:599px){
+    .banner-cnt h1{font-size:25px;line-height: 40px;}
+    /* .banner figure img{min-height:250px;} */
+    form ul li{margin:0 0 10px 0;}
+    form ul li label{padding:5px 0 5px 0;}
+    .enterprice-right p span{font-size:10px;line-height: 17px;padding:10px 0 10px 35px;}
+    form h2{padding:4px 50px 10px 0;font-size:23px;line-height: 35px;}
+    .footer-in span{float:none;width:100%;padding:0 0 20px 0;}
+    .footer-in{text-align: center;}
+    .footer-right{float:none;}
+    .enterprice-in{padding:20px 0px 15px 0;}
+    form .button{font-size:15px;margin:11px auto auto;}
+    form h2:after{top: -16px;height: 49px;width: 40px;}
+    form{padding:40px 15px 20px 15px;}
+    .header{padding:30px 30px 1px 30px;}
+    .enterprice-left p{line-height: 25px;}
+ 
+}
+@media only screen and (max-width:479px){
+    .banner-cnt{top:43%;}
+    .banner-cnt h1{font-size:18px;line-height:26px;}
+    .footer-in span{font-size:10px;}
+}
+
+
+      
+      </style>
+   </head>
+   <body>
+      <!-- wrapper starts -->
+      <div class="wrapper">
+         <!-- header starts here -->
+         
+         <!-- header ends here -->
+         <!-- banner starts here -->
+         <div class="banner">
+             <a href="https://www.niit-tech.com" target="_blank">
+            <figure><img src="http://html2.upupload.com/66292/31nlfob4f66292/images/banner-desk.jpg" height="300px" class="banner-desk"></figure>
+            <figure><img src="http://html2.upupload.com/66292/31nlfob4f66292/images/banner-mob.jpg" class="banner-mob"></figure>  
+            <!-- <div class="banner-cnt">
+                <h1  window.location.href="https://www.niit-tech.com" target="_blank">Robotics the New Workforce<br>for Intelligent Enterprise</h1>
+               
+            </div> -->
+                   </a>
+         </div>
+         <!-- banner ends here -->
+         <!-- main content starts here -->
+         <div class="main-content">
+            <div class="enterprice-blk">
+               <div class="container">
+                  <div class="enterprice-in">
+                     
+                     <div class="enterprice-right">
+                        <form id="contact_form" name="contact_form" method="post"  >
+                           <h2>Connect with Us</h2>
+                           <ul>
+                              <li><label for="fname">First Name:</label>
+                                 <input type="text" name="fname" class="form-ctrl"  id="fname">
+                              </li>
+                              <li><label for="lname">Last Name:</label>
+                                 <input type="text" name="lname" class="form-ctrl"  id="lname">
+                              </li>
+                              <li><label for="ftitle">Title:</label>
+                                 <input type="text" name="ftitle" class="form-ctrl"  id="ftitle">
+                              </li>
+                              <li><label for="fcompany">Company Name:</label>
+                                 <input type="text" name="fcompany" class="form-ctrl"  id="fcompany">
+                              </li>
+                              <li class="email"><label for="femail">Email ID:</label>
+                                 <input type="text" name="femail" class="form-ctrl"  id="femail">
+                              </li>
+                              <li class="phone"><label for="fphone">Phone Number:<!-- <span>(Please put validation)</span> --> </label>
+                                 <input type="number" name="fphone" class="form-ctrl"  id="fphone">
+                              </li>
+                              <li>
+                                 <label for="fselect">Revenue Size:</label>
+                                 <select class="select form-ctrl" name="fselect" id="fselect">
+                                    
+                                    <option value="$100M- 250M">$100M- 250M</option>
+                                    <option value="$250m-500M">$250m-500M</option>
+                                    <option value="$500M-$1B">$500M-$1B</option>
+                                    <option value=">1B above">>1B above</option>
+                                    
+                                 </select>
+                              </li>
+                           </ul>
+                           <p>
+                              <label for="fcheck">
+                              <input type="checkbox" name="fcheck" id="fcheck"  class="check1"><span class="check-label">I am ready to speak with NIIT Technologies</span></label>
+                           </p>
+                           <button type="button" value="submit" class="button" id="submit_btn">Submit</button>
+                           <span class="errS"></span>
+                           <span class="f_success"></span>
+                        </form>
+                     </div>
+                      <div class="enterprice-left">
+                        <p>With enterprise IT landscape growing more complex each passing day, business success increasingly depends on streamlining operations to enhance efficiency and facilitate faster decision-making. NIIT Technologies offers an end-to-end RPA engagement, which enables an enterprise to embark on its own holistic RPA journey.</p>
+                        <p>Our consultants will help you understand the following in the <span>FREE 1 Day Advisory Session.</span></p>
+                        <div class="consultant">
+                           
+                           <ul>
+                              <li>
+                                 <p>What is RPA and how is it different from the traditional IT automation?</p>
+                              </li>
+                              <li>
+                                 <p> Business areas where adoption of RPA has proven to be extremely disruptive</p>
+                              </li>
+                              <li>
+                                 <p> The ideal RPA journey, different approaches &amp; the best tools available?</p>
+                              </li>
+                              <li>
+                                 <p>How can you kick start your RPA journey?</p>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="clear"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- main content ends here -->
+         <!-- footer starts here -->
+         <footer>
+            <div class="container">
+               <div class="footer-in">
+                  <span>Copyright © NIIT Technologies, 2018. All right reserved. <a href="https://www.niit-tech.com/privacy-statement">Privacy Policy</a></span>
+                  <div class="footer-right">
+                     <ul class="clearfix">
+                        <li><a href="https://www.facebook.com/niit.tech" target="_blank"><img src="http://html2.upupload.com/66292/31nlfob4f66292/images/facebook.png" width="49" height="49" alt="icon"></a></li>
+                        <li><a href="https://www.linkedin.com/company/niit-technologies-limited?trk=hb_tab_compy_id_271908" target="_blank"><img src="http://html2.upupload.com/66292/31nlfob4f66292/images/kinkedin.png" width="49" height="49" alt="icon"></a></li>
+                        <li><a href="https://www.twitter.com/NIITTech" target="_blank"><img src="http://html2.upupload.com/66292/31nlfob4f66292/images/twitter.png" width="49" height="49" alt="icon"></a></li>
+                        <li><a href="https://www.youtube.com/user/niittechnologiesltd" target="_blank"><img src="http://html2.upupload.com/66292/31nlfob4f66292/images/videoicon.png" width="49" height="49" alt="icon"></a></li>
+                     </ul>
+                  </div>
+                  <div class="clear"></div>
+               </div>
+            </div>
+         </footer>
+         <!-- footer ends here -->
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="http://html2.upupload.com/66292/31nlfob4f66292/js/jquery.dd.js"></script>
+      <script src="http://html2.upupload.com/66292/31nlfob4f66292/js/customscript.js"></script>
+      <!-- wrapper ends -->
+   </body>
+</html>
